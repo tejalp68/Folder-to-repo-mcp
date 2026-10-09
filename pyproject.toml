@@ -1,0 +1,19 @@
+[project]
+name = "aiml-sync"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tejalp68", email = "tejalpagar368@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+]
+
+[project.scripts]
+aiml-sync = "aiml_sync:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
